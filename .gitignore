@@ -1,0 +1,36 @@
+.idea
+# History files
+.Rhistory
+.Rapp.history
+# Session Data files
+.RData
+# Example code in package build process
+*-Ex.R
+# Output files from R CMD build
+/*.tar.gz
+# Output files from R CMD check
+/*.Rcheck/
+# RStudio files
+.Rproj.user/
+.Ruserdata
+# Saved objects. Needed now for built in datasets. Don't want those in tests
+tests/testthat/*.rda
+# Genered plots from tests
+tests/testthat/Rplots.pdf
+.Rproj.user
+# Notebook checks
+inst/notebooks/.ipynb_checkpoints
+Rplot.png
+# For unit tests around sqlite (DB)
+inst/extdata/unit-test.sqlite
+# Dropbox tracking files
+*.DS_Store
+.env
+env
+.credentials.R
+# txt files anywhere
+**/*.txt
+# html files in home directory; preserve in docs/
+/*.html
+# Not certain that we don't need these, but I'm not sure why pkgdown is causing their generation:
+docs/reference/*.pdf
